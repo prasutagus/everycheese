@@ -15,3 +15,8 @@ def test_get_absolute_url():
     cheese = CheeseFactory()
     url = cheese.get_absolute_url()
     assert url == f'/cheeses/{cheese.slug}/'
+
+def test_get_absolute_url():
+    cheese = CheeseFactory()
+    url = cheese.get_absolute_url()
+    assert url == f'/cheeses/{cheese.slug}/'
